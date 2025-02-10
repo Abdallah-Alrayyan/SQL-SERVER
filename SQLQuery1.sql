@@ -1,0 +1,50 @@
+CREATE DATABASE Library1 ;
+
+
+CREATE TABLE BOOKS(
+BOOKID INT,
+TITLE VARCHAR(20),
+AUTHORID INT,
+PUBLISHEDYEAR INT,
+COPIESAVAILABLE INT,
+BOOKCATEGORY VARCHAR (20)
+)
+
+
+CREATE TABLE AUTHORS(
+AUTHORID INT,
+FIRSTNAME VARCHAR(20),
+LASTNAME VARCHAR(20),
+BIRTHYEAR INT 
+)
+
+
+INSERT into BOOKS values (1, 'aaa', 1, 1990,10 , 'math')
+INSERT into BOOKS values (1, 'aaa', 1, 1990,10 , 'math')
+INSERT into BOOKS values (1, 'aaa', 1, 1990,10 , 'math')
+INSERT into BOOKS values (1, 'aaa', 1, 1990,10 , 'math')
+INSERT into BOOKS values (1, 'aaa', 1, 1990,10 , 'math')
+
+
+
+INSERT into AUTHORS values (1, 'abd', 'alrayyan', 1990)
+INSERT into AUTHORS values (1, 'abd', 'alrayyan', 1990)
+INSERT into AUTHORS values (1, 'abd', 'alrayyan', 1990)
+INSERT into AUTHORS values (1, 'abd', 'alrayyan', 1990)
+INSERT into AUTHORS values (1, 'abd', 'alrayyan', 1990)
+
+
+select * FROM BOOKS , AUTHORS;
+
+SELECT AVG(PUBLISHEDYEAR) FROM BOOKS;
+
+SELECT COUNT(COPIESAVAILABLE) FROM BOOKS;
+
+DELETE BOOKS ;
+
+ALTER TABLE AUTHORS ADD PHONENUMBER INT , EMAIL VARCHAR(200);
+
+DELETE AUTHORS;
+
+
+
